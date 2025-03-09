@@ -1,0 +1,29 @@
+
+body{
+    background-color: rgb(30, 30, 46);
+    font-size:24px;
+    color: #fff;
+}
+img{
+    position: absolute;
+    border-radius: 0px;
+    padding: 0px;
+    background:none;
+}
+#context{
+    position:absolute;
+    width: 75vw;
+    left: 50%;
+	text-align: justify;
+    transform: translateX(-50%);
+}
+a:link {
+  color: rgb(234, 118, 203);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: rgb(136, 57, 239);
+  background-color: transparent;
+  text-decoration: underline;
+}
