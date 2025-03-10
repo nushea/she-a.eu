@@ -15,18 +15,23 @@ img{
     background:none;
 }
 #context{
+	display: flex;
+	flex-direction: column;
     position:absolute;
-	height: 66.6%;
-	width: 50%;
-    top: 16.6%;
-    left: 37.5%;
+	max-height: 83.3%;
+	width: 70%;
+    top: 8.33%;
+    left: 50vh;
 	text-align: justify;
-//    transform: translateX(-50%);
+	overflow-y: auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+#context p {
+    margin-bottom: 0%; /* space between paragraphs */
 }
 #SheaNameTitle{
-
 	text-align: center;
-//    transform: translateX(-50%);
 }
 a:link {
   color: rgb(234, 118, 203);
