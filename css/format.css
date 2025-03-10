@@ -27,3 +27,36 @@ a:visited {
   background-color: transparent;
   text-decoration: underline;
 }
+
+.LinkLogo{
+	height: 16.66%;
+	width: 16.66vh;
+}
+.LinkLink{
+	position:absolute;
+}
+
+#MailLogo {
+	left: 0%;
+	top: 33.4%;
+}
+#MailAddress {
+	left: 16.66vh;
+	top: 37%;
+}
+#MatrixLogo {
+	left: 0%;
+	top: 50%;
+}
+#MatrixAddress {
+	left: 16.66vh;
+	top: 55%;
+}
+#GithubLogo {
+	left: 0%;
+	top: 66.6%;
+}
+#GithubAddress {
+	left: 16.66vh;
+	top: 72%;
+}
