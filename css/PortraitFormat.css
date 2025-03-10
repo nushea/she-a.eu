@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'FavFont';
+    src: url('https://texts.she-a.eu/font.ttf') format('truetype');
+}
+@media (orientation: portrait) {
+#SideHandles{
+	width: 100vw;
+	height: 25vw;
+}
+#context{
+	max-height: 83.3%;
+    top: 31.25vw;
+    left: 6.25vw;
+    padding-bottom: 6.25vw; 
+	padding-right: 6.25vw;
+}
+.LinkLogo{
+	height: 25vw;
+	width: 25vw;
+}
+.LinkLink{
+	font-size:0vh;
+}
+
+#NuseaLogo {
+	left: 0vw;
+	top: 0vh;
+}
+#MailLogo {
+	left: 25vw;
+	top: 0vh;
+}
+#MatrixLogo {
+	left: 50vw;
+	top: 0vh;
+}
+#GithubLogo {
+	left: 75vw;
+	top: 0vh;
+}
+}

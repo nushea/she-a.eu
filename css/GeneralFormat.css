@@ -16,27 +16,21 @@ img{
 }
 #SideHandles{
 	position:fixed;
-	width: 50vh;
-	height: 100%;
 	left: 0%;
-	top: 0;
+	top: 0%;
 	background-color: rgb(17, 17, 27);
 }
 #context{
 	display: flex;
 	flex-direction: column;
     position:absolute;
-	max-height: 83.3%;
-    top: 8.33%;
-    left: 58.33vh;
 	text-align: justify;
 	overflow-y: auto;
-    padding-bottom: 8.33vh; 
-	padding-right: 8.33vh;
     box-sizing: border-box;
 }
 #context p {
     margin-bottom: 0%; /* space between paragraphs */
+	font-size: 24px;
 }
 #SheaNameTitle{
 	text-align: center;
@@ -54,43 +48,7 @@ a:visited {
 
 .LinkLogo{
 	position:fixed;
-	height: 16.66vh;
-	width: 16.66vh;
 }
 .LinkLink{
 	position:fixed;
-	font-size:5.55vh;
-}
-
-#NuseaLogo {
-	left: 0%;
-	top: 16.66vh;
-}
-#NuseaAddress {
-	left: 16.66vh;
-	top: 16.66vh;
-}
-#MailLogo {
-	left: 0%;
-	top: 33.4vh;
-}
-#MailAddress {
-	left: 16.66vh;
-	top: 33.4vh;
-}
-#MatrixLogo {
-	left: 0%;
-	top: 50vh;
-}
-#MatrixAddress {
-	left: 16.66vh;
-	top: 50vh;
-}
-#GithubLogo {
-	left: 0%;
-	top: 66.6vh;
-}
-#GithubAddress {
-	left: 16.66vh;
-	top: 66.6vh;
 }

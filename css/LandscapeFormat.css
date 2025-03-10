@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'FavFont';
+    src: url('/FavFont.ttf') format('truetype');
+}
+@media (orientation: landscape) {
+#SideHandles{
+	width: 50vh;
+	height: 100%;
+}
+#context{
+	max-height: 83.3%;
+    top: 8.33%;
+    left: 58.33vh;
+    padding-bottom: 8.33vh; 
+	padding-right: 8.33vh;
+}
+.LinkLogo{
+	height: 16.66vh;
+	width: 16.66vh;
+}
+.LinkLink{
+	font-size:5.55vh;
+}
+
+#NuseaLogo {
+	left: 0%;
+	top: 16.66vh;
+}
+#NuseaAddress {
+	left: 16.66vh;
+	top: 16.66vh;
+}
+#MailLogo {
+	left: 0%;
+	top: 33.4vh;
+}
+#MailAddress {
+	left: 16.66vh;
+	top: 33.4vh;
+}
+#MatrixLogo {
+	left: 0%;
+	top: 50vh;
+}
+#MatrixAddress {
+	left: 16.66vh;
+	top: 50vh;
+}
+#GithubLogo {
+	left: 0%;
+	top: 66.6vh;
+}
+#GithubAddress {
+	left: 16.66vh;
+	top: 66.6vh;
+}
+}
