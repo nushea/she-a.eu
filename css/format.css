@@ -1,7 +1,11 @@
-
+@font-face {
+    font-family: 'FavFont';
+    src: url('https://texts.she-a.eu/font.ttf') format('truetype');
+}
 body{
     background-color: rgb(30, 30, 46);
     font-size:24px;
+	font-family: 'FavFont', sans-serif;
     color: #fff;
 }
 img{
@@ -12,10 +16,17 @@ img{
 }
 #context{
     position:absolute;
-    width: 75vw;
-    left: 50%;
+	height: 66.6%;
+	width: 50%;
+    top: 16.6%;
+    left: 37.5%;
 	text-align: justify;
-    transform: translateX(-50%);
+//    transform: translateX(-50%);
+}
+#SheaNameTitle{
+
+	text-align: center;
+//    transform: translateX(-50%);
 }
 a:link {
   color: rgb(234, 118, 203);
@@ -29,20 +40,30 @@ a:visited {
 }
 
 .LinkLogo{
+	position:fixed;
 	height: 16.66%;
 	width: 16.66vh;
 }
 .LinkLink{
-	position:absolute;
+	position:fixed;
+	font-size:5.55vh;
 }
 
+#NuseaLogo {
+	left: 0%;
+	top: 16.66%;
+}
+#NuseaAddress {
+	left: 16.66vh;
+	top: 16.66vh;
+}
 #MailLogo {
 	left: 0%;
 	top: 33.4%;
 }
 #MailAddress {
 	left: 16.66vh;
-	top: 37%;
+	top: 33.4vh;
 }
 #MatrixLogo {
 	left: 0%;
@@ -50,7 +71,7 @@ a:visited {
 }
 #MatrixAddress {
 	left: 16.66vh;
-	top: 55%;
+	top: 50%;
 }
 #GithubLogo {
 	left: 0%;
@@ -58,5 +79,5 @@ a:visited {
 }
 #GithubAddress {
 	left: 16.66vh;
-	top: 72%;
+	top: 66.6%;
 }
