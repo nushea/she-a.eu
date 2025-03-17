@@ -22,19 +22,19 @@
 	font-size:5.55vh;
 }
 
-#NuseaLogo {
+#MailLogo {
 	left: 0%;
 	top: 16.66vh;
 }
-#NuseaAddress {
+#MailAddress {
 	left: 16.66vh;
 	top: 16.66vh;
 }
-#MailLogo {
+#GithubLogo {
 	left: 0%;
 	top: 33.4vh;
 }
-#MailAddress {
+#GithubAddress {
 	left: 16.66vh;
 	top: 33.4vh;
 }
@@ -46,12 +46,22 @@
 	left: 16.66vh;
 	top: 50vh;
 }
-#GithubLogo {
+#BSkyLogo {
 	left: 0%;
 	top: 66.6vh;
 }
-#GithubAddress {
+#BSkyAddress {
 	left: 16.66vh;
 	top: 66.6vh;
 }
+#NuseaLogo {
+	left: 0%;
+	top: 83.33vh;
+}
+#NuseaAddress {
+	left: 16.66vh;
+	top: 83.33vh;
+}
+
+
 }
