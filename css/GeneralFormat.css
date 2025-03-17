@@ -1,54 +1,137 @@
 @font-face {
     font-family: 'FavFont';
-    src: url('https://texts.she-a.eu/font.ttf') format('truetype');
-}
-body{
-    background-color: rgb(30, 30, 46);
-    font-size:24px;
-	font-family: 'FavFont', sans-serif;
-    color: #fff;
-}
-img{
-    position: absolute;
-    border-radius: 0px;
-    padding: 0px;
-    background:none;
-}
-#SideHandles{
-	position:fixed;
-	left: 0%;
-	top: 0%;
-	background-color: rgb(17, 17, 27);
-}
-#context{
-	display: flex;
-	flex-direction: column;
-    position:absolute;
-	text-align: justify;
-	overflow-y: auto;
-    box-sizing: border-box;
-}
-#context p {
-    margin-bottom: 0%; /* space between paragraphs */
-	font-size: 24px;
-}
-#SheaNameTitle{
-	text-align: center;
-}
-a:link {
-  color: rgb(234, 118, 203);
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:visited {
-  color: rgb(136, 57, 239);
-  background-color: transparent;
-  text-decoration: underline;
+    src: url('/FavFont.ttf') format('truetype');
 }
 
-.LinkLogo{
-	position:fixed;
+/* Main */
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    border: none;
+    padding: 0;
 }
-.LinkLink{
-	position:fixed;
+
+li {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: rgb(30, 30, 46);
+    font-size: 24px;
+    font-family: 'FavFont', sans-serif;
+    color: #fff;
+}
+
+/* Side handles */
+
+#SideHandles {
+    flex: none;
+    background-color: rgb(17, 17, 27);
+}
+
+#SideHandles>ul {
+    display: flex;
+    height: 100%;
+}
+
+.Link {
+    display: flex;
+    align-items: center;
+    color: rgb(234, 118, 203);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Link:visited {
+    color: rgb(136, 57, 239);
+}
+
+.Link>img {
+    width: 1em;
+    height: 1em;
+}
+
+/* Main content */
+
+#container {
+    min-height: 0;
+    padding: 1em;
+}
+
+#content {
+    overflow-y: auto;
+    text-align: justify;
+    height: 100%;
+}
+
+#SheaNameTitle {
+    text-align: center;
+}
+
+#content p,
+#content h3 {
+    margin-bottom: 0.9em;
+}
+
+/* Landscape */
+
+body {
+    flex-direction: row;
+}
+
+#SideHandles {
+    height: 100%;
+    width: 50vh;
+}
+
+#SideHandles>ul {
+    flex-direction: column;
+    justify-content: end;
+}
+
+.Link>img {
+    font-size: 16.667vh;
+}
+
+.Link>span {
+    font-size: 5.556vh;
+}
+
+/* Portrait */
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+
+    #SideHandles {
+        width: 100%;
+        height: 25vw;
+    }
+
+    #SideHandles>ul {
+        flex-direction: row-reverse;
+    }
+
+    .Link>img {
+        font-size: 25vw;
+    }
+
+    .Link>span, #NuseaLink {
+        display: none;
+    }
 }
