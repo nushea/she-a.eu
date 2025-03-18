@@ -131,7 +131,10 @@ body {
         font-size: 25vw;
     }
 
-    .Link>span, #NuseaLink {
+    .Link>span, #IRCLink {
+        display: none;
+    }
+    .Link>span, #DiscordLink {
         display: none;
     }
 }
