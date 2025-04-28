@@ -16,6 +16,7 @@ ansible.style.fontFamily = "FavFont, monospace";
 //ansible.style.fontWeight = 'bold';
 
 arr = Array.from({ length: sizeY }, () => Array(sizeX).fill(0));
+let blink = false;
 
 async function setupGrid() {
     let html = "";
@@ -70,11 +71,13 @@ function printer(posX, posY, colbg, colfg, oup){
         let obj = document.getElementById("C" + y + "," + x);
         if (!obj) continue;
         obj.style.color = colfg;
-//		obj.style.backgroundColor = colbg;
+
+		if(blink){
+			obj.innerHTML = `<span class="blink-css">${oup}</span>`;
+			continue;
+		}
         if (oup[i] < 'a' || oup[i] > 'Z') obj.style.backgroundColor = colbg;
-//		if(oup[i] != ' ')
-	        obj.innerHTML = oup[i];
-//		else obj.innerHTML = '_';
+			obj.innerHTML = oup[i];
     }
 }
 
@@ -124,6 +127,9 @@ fetch('test.txt')
 				
 			}
 			else if(tokens[i][0] == '['){
+				blink = false;
+				if(tokens[i].includes("[5m"))
+					blink = true;
 				if(tokens[i].includes("[38;2;") || tokens[i].includes(";48;2;")){
 					if(tokens[i].startsWith("[38;2;")){
 						tokens[i] = tokens[i].substring(6);
@@ -154,9 +160,11 @@ fetch('test.txt')
 					else
 						colbg = ansiTable(tokens[i].substring(4,7));
 					tokens[i] = tokens[i].substring(7);
-					if(tokens[i][0]=="m" && tokens[i].length < 3)
+					if(tokens[i][0]=="m" && tokens[i].length < 2)
 						tokens[i] = tokens[i].substring(1);
 				}
+				if(blink)
+					tokens[i]="_";
 				printer(posX,posY, colbg, colfg, tokens[i]);
 			}
 			else{
