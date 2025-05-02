@@ -101,7 +101,7 @@ function ansiTable(inp){
 	if(inp.includes("97")||inp.includes("107")) return "#ffffff";		//White (light)
 }
 
-fetch('http://she-a.eu/nifur')
+fetch('https://she-a.eu/nifur')
   .then(res => res.text())
   .then(async text => {
 		tokens = text.split("\x1b");
