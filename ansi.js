@@ -53,18 +53,15 @@ async function setupGrid() {
         }
     }
 }
-//		ansible.innerHTML += "<span>arara</span>";
-
-
 
 function containsAlphabet(str) {
     return /[a-zA-Z]/.test(str);
 }
 
 function printer(posX, posY, colbg, colfg, oup){
+    let x = Math.floor(posX)-1;
+    let y = Math.floor(posY)-1;
     for (let i = 0; i < oup.length; i++) {
-        let x = Math.floor(posX)+i-1;
-        let y = Math.floor(posY)-1;
         if (x < 0 || x > sizeX || y < 0 || y > sizeY){ 
 //			console.log({"posX": posX, "posY": posY}, {"x": x, "y": y});
 			continue;
@@ -77,9 +74,16 @@ function printer(posX, posY, colbg, colfg, oup){
 			obj.innerHTML = `<span class="blink-css">${oup}</span>`;
 			continue;
 		}
-        if (oup[i] < 'a' || oup[i] > 'Z') obj.style.backgroundColor = colbg;
+		if (oup[i] == '\n'){
+			x = 0;
+			y += 1;
+		}
+		else{
+		if (oup[i] < 'a' || oup[i] > 'Z') obj.style.backgroundColor = colbg;
 			obj.innerHTML = oup[i];
-    }
+	    x += 1;
+		}
+	}
 }
 
 function ansiTable(inp){
@@ -161,7 +165,7 @@ fetch('https://she-a.eu/nifur'+location.pathname)
 					else
 						colbg = ansiTable(tokens[i].substring(4,7));
 					tokens[i] = tokens[i].substring(7);
-					if(tokens[i][0]=="m" && tokens[i].length < 2)
+					if(tokens[i][0]=="m" && (tokens[i].length < 3 || !(/[a-zA-Z0-9]/.test(tokens[i][1]))))
 						tokens[i] = tokens[i].substring(1);
 				}
 				if(blink)
