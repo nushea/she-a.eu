@@ -53,7 +53,7 @@ async function setupGrid() {
         }
     }
 }
-		ansible.innerHTML += "<span>arara</span>";
+//		ansible.innerHTML += "<span>arara</span>";
 
 
 
@@ -101,8 +101,8 @@ function ansiTable(inp){
 	if(inp.includes("97")||inp.includes("107")) return "#ffffff";		//White (light)
 }
 
-fetch('test.txt')
-  .then(response => response.text())
+fetch('http://she-a.eu/nifur')
+  .then(res => res.text())
   .then(async text => {
 		tokens = text.split("\x1b");
 		i=0;
