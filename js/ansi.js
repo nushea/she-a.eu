@@ -13,7 +13,7 @@ regbg = "rgb(24,24,37)";
 
 ansible.style.fontSize = fontSize+"pt";
 ansible.style.fontFamily = "FavFont, monospace";
-ansible.style.marginTop = "25vh";
+//ansible.style.marginTop = "25vh";
 //ansible.style.fontWeight = 'bold';
 
 arr = Array.from({ length: sizeY }, () => Array(sizeX).fill(0));
@@ -115,6 +115,7 @@ fetch('https://she-a.eu/nifur'+location.pathname)
 		let colbg = defbg;
 		let colfg = deffg;
 		await setupGrid();
+		document.getElementById("termiHome").innerHTML += "<img id=\"terminal\" src=\"/img/terminal.svg\">";
 		while(i<tokens.length){
 			if(!tokens[i]){i++; continue;}
 			else if(tokens[i].includes("[0m")){

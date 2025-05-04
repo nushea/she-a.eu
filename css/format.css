@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'FavFont';
+    src: url('/FavFont.ttf') format('truetype');
+}
+@keyframes blink {
+	0% { opacity:1 } 75% { opacity:1 } 76% { opacity:0 } 100% { opacity:0 }
+}
+
+blink, .blink-css {
+	animation:blink 0.75s ease-in infinite alternate!important;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #181825;
+    color: rgb(204,214,244);
+}
+
+#terminal {
+	width: 726px;
+	z-index: 0;
+	position: fixed;
+	padding: 0;
+	border: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -54.25%);
+}
+#ansible {
+    z-index: 1;
+    font-family: "FavFont", monospace !important;
+    font-size: 20px;
+	padding: 0;
+	border: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
