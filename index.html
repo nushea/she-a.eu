@@ -2,39 +2,83 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/format.css">
+        <link rel="stylesheet" type="text/css" href="/css/GeneralFormat.css">
+        <link rel="stylesheet" type="text/css" href="/css/PortraitFormat.css">
 		<meta charset="UTF-8">
         <title>Nusea</title>
     </head>
 	<body>
+		<nav id="SideHandles">
+			<ul>
+				<li id="IRCLink">
+					<a class="Link" href="https://web.libera.chat">
+						<img src="/img/irc.svg" alt="">
+						<span>/msg se-a</span>
+					</a>
+				</li>
+				<li id="MailLink">
+					<a class="Link" href="mailto:nu@she-a.eu">
+						<img src="/img/email.svg" alt="">
+						<span>nu@she-a.eu</span>
+					</a>
+				</li>
+				<li id="MatrixLink">
+					<a class="Link" href="https://matrix.to/#/@nu:she-a.eu">
+						<img src="/img/matrix.svg" alt="">
+						<span>@nu:she-a.eu</span>
+					</a>
+				</li>
+				<li id="GithubLink">
+					<a class="Link" href="https://github.com/nushea">
+						<img src="/img/github.svg" alt="">
+						<span>@nushea</span>
+					</a>
+				</li>
+				<li id="BSkyLink">
+					<a class="Link" href="https://bsky.app/profile/nu.she-a.eu">
+						<img id="BSkyLogo" class="LinkLogo" src="/img/bluesky.svg" alt="">
+						<span>@nu.she-a.eu</span>
+					</a>
+				</li>
+				<li id="DiscordLink">
+					<a class="Link" href="https://discord.com/users/828270967381426206">
+						<img src="/img/discord.svg" alt="">
+						<span>@.se.a</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 		<div id="termiHome"></div>
 			<div id="ansible">
 				<script src="/js/ansi.js"></script>
-				<noscrpt> 
-					<div> 
-						<h1>Hi, this is Shea, this is Shea's website!</h1>
-						<p>Just saying but this page is made to either run using JS or the terminal, where you can try to run curl she-a.eu
-						<h3>My current projects are: </h3>
-						<p>→ maintaining my email service set up through the emailwizz script</p>
-						<p>→ maintaining the matrix instance through synapse so i may have an account on my domain </p>
-						<p>→maintaining the nginx server to serve these objects that refer to my projects</p>
-						<p>→creating these comfy~~ pages</p>
-						<p>→accomodating myself w git</p>
-						<p>→kissin my partner</p>
-						<h3>INDEX </h3>
-						<p>$ curl she-a.eu/simple</p>
-						<p>$ curl she-a.eu/index</p>
-						<p>$ curl she-a.eu</p>
-						<h3> CONTACT </h3>
-						<p>libera	/msg se-a</p>
-						<p>email    nu@she-a.eu</p>
-						<p>matrix   @nu:she-a.eu</p>
-						<p>github   @nushea</p>
-						<p>bluesky   @nu.she-a.eu</p>
-						<p>discord   @.se.a</p>
-						<p>nothing else for now :c</p>
-					</div>
-				</noscrpt>
-			</div>
+				<noscrpt>
+					<div id="container">
+						<main id="content">
+							<h1>Hi, this is Shea, this is Shea's website!</h1>
+							<p>Just saying but this page is made to either run using JS or the terminal, where you can try to run curl she-a.eu
+							<h3>My current projects are: </h3>
+							<p>→ maintaining my email service set up through the emailwizz script</p>
+							<p>→ maintaining the matrix instance through synapse so i may have an account on my domain </p>
+							<p>→maintaining the nginx server to serve these objects that refer to my projects</p>
+							<p>→creating these comfy~~ pages</p>
+							<p>→accomodating myself w git</p>
+							<p>→kissin my partner</p>
+							<h3>INDEX </h3>
+							<p>$ curl she-a.eu/simple</p>
+							<p>$ curl she-a.eu/index</p>
+							<p>$ curl she-a.eu</p>
+							<h3> CONTACT </h3>
+							<p>libera	/msg se-a</p>
+							<p>email    nu@she-a.eu</p>
+							<p>matrix   @nu:she-a.eu</p>
+							<p>github   @nushea</p>
+							<p>bluesky   @nu.she-a.eu</p>
+							<p>discord   @.se.a</p>
+							<p>nothing else for now :c</p>
+					</main>
+				</div>
+		</noscrpt>
+	</div>
 
-	</body>
+</body>
 

@@ -69,13 +69,10 @@ body {
 
 #container {
     min-height: 0;
-    padding: 1em;
 }
 
 #content {
     overflow-y: auto;
-    text-align: justify;
-    height: 100%;
 }
 
 #SheaNameTitle {
@@ -109,6 +106,10 @@ body {
 
 .Link>span {
     font-size: 5.556vh;
+}
+#content { 
+	padding-left: 30vh;
+
 }
 
 /* Portrait */
