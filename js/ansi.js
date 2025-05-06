@@ -116,6 +116,8 @@ fetch('https://she-a.eu/nifur'+location.pathname)
 		let colfg = deffg;
 		await setupGrid();
 		document.getElementById("termiHome").innerHTML += "<img id=\"terminal\" src=\"/img/terminal.svg\">";
+		document.getElementById("terminal").style.left += "75%";
+		ansible.style.left = "75%";
 		while(i<tokens.length){
 			if(!tokens[i]){i++; continue;}
 			else if(tokens[i].includes("[0m")){
