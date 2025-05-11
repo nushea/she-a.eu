@@ -1,6 +1,6 @@
 ansible = document.getElementById("ansible");
 
-fontSize = 15;
+fontSize = 20;
 offX = 30;
 offY = 50;
 sizeX = 80;
@@ -10,9 +10,7 @@ deffg = "rgb(30,75,255)";
 defbg = "rgb(30,30,46)";
 regbg = "rgb(24,24,37)";
 
-
-ansible.style.fontSize = fontSize+"pt";
-ansible.style.fontFamily = "FavFont, monospace";
+ansible.style.fontSize = fontSize+"px";
 //ansible.style.marginTop = "25vh";
 //ansible.style.fontWeight = 'bold';
 
@@ -30,7 +28,6 @@ async function setupGrid() {
     
     ansible.innerHTML = html;
 
-    ansible.style.display = "grid";
     ansible.style.gridTemplateColumns = `repeat(${sizeX}, min-content)`;
     ansible.style.gridTemplateRows = `repeat(${sizeY}, min-content)`;
 
@@ -38,17 +35,7 @@ async function setupGrid() {
         for (let j = 0; j < sizeX; j++) {
             let cell = document.getElementById("C"+i+","+j);
             arr[i][j] = cell;
-
-            cell.style.margin 			= 0;
-            cell.style.padding 			= 0;
-            cell.style.display 			= "flex"; 
-            cell.style.height 			= (fontSize*1.3) + "px";
-			cell.style.width 			= (fontSize*.6) + "px";
-            cell.style.alignItems 		= "center";
-            cell.style.justifyContent 	= "center";
-            cell.style.whiteSpace 		= "pre";
             cell.style.backgroundColor	= defbg;
-            
             cell.innerHTML = "a";
         }
     }
@@ -115,9 +102,7 @@ fetch('https://she-a.eu/nifur'+location.pathname)
 		let colbg = defbg;
 		let colfg = deffg;
 		await setupGrid();
-		document.getElementById("termiHome").innerHTML += "<img id=\"terminal\" src=\"/img/terminal.svg\">";
-		document.getElementById("terminal").style.left += "75%";
-		ansible.style.left = "75%";
+		document.getElementById("termBorder").src += "/img/terminal.svg";
 		while(i<tokens.length){
 			if(!tokens[i]){i++; continue;}
 			else if(tokens[i].includes("[0m")){

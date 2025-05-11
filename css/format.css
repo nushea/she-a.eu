@@ -2,6 +2,7 @@
     font-family: 'FavFont';
     src: url('/FavFont.ttf') format('truetype');
 }
+
 @keyframes blink {
 	0% { opacity:1 } 75% { opacity:1 } 76% { opacity:0 } 100% { opacity:0 }
 }
@@ -9,6 +10,7 @@
 blink, .blink-css {
 	animation:blink 0.75s ease-in infinite alternate!important;
 }
+
 html, body {
     height: 100%;
     margin: 0;
@@ -19,35 +21,58 @@ body {
     color: rgb(204,214,244);
 }
 
-#terminal {
-	width: 826px;
-	z-index: 0;
-	position: fixed;
-	padding: 0;
-	border: 0;
-	left: 60%;
-	top: 50%;
-	transform: translate(-50%, -54.25%);
+#termContainer {
+	display: flex;
+	align-items: center;
+	flex: 1 0 auto;
+	height: 100%;
 }
+#termContainer::before {
+	content: "";
+	flex: 9 0 auto;
+}
+#termContainer::after {
+	content: "";
+	flex: 1 0 auto;
+}
+
+#termInner {
+	position: relative;
+}
+
+#termBorder {
+	width: 826px;
+	/* height: 518px; */
+}
+
 #ansible {
-    z-index: 1;
-    font-family: "FavFont", monospace !important;
-    font-size: 20px;
+	font-family: "FavFont", monospace;
+	display: grid;
 	padding: 0;
 	border: 0;
-    position: fixed;
-    left: 60%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	justify-content: center;
+	align-content: center;
+	padding-top: 36px;
+}
+
+.grid-cell {
+	margin: 0;
+    padding: 0;
+    display: flex;
+	height: .975em;
+	width: .45em;
+	align-items: center;
+	justify-content: center;
+	white-space: pre;
 }
 
 @media (orientation: portrait) {
-
-	#terminal {	
-		left: 50%;
+	#termContainer::before {
+		flex-grow: 1;
 	}
-	#ansible {
-		left: 50%;
-	}
-
 }
