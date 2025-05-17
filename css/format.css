@@ -24,7 +24,7 @@ body {
 #termContainer {
 	display: flex;
 	align-items: center;
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 	height: 100%;
 }
 #termContainer::before {
@@ -35,9 +35,15 @@ body {
 	content: "";
 	flex: 1 0 auto;
 }
+#termContainer {
+	top: 10vh;
+	overflow: auto;
+}
 
 #termInner {
 	position: relative;
+	margin: auto;
+	flex: 1 1 auto;
 }
 
 #termBorder {
