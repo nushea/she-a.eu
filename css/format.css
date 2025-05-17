@@ -50,6 +50,9 @@ body {
 	width: 826px;
 	/* height: 518px; */
 }
+#termInner {
+	flex: 0 1 auto;
+}
 
 #ansible {
 	font-family: "FavFont", monospace;
