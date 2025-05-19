@@ -38,6 +38,7 @@ body {
 #termContainer {
 	top: 10vh;
 	overflow: auto;
+	align-self: center;
 }
 
 #termInner {
@@ -52,6 +53,12 @@ body {
 }
 #termInner {
 	flex: 0 1 auto;
+}
+
+#Centereds {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 #ansible {
