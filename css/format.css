@@ -38,13 +38,13 @@ body {
 #termContainer {
 	top: 10vh;
 	overflow: auto;
-	align-self: center;
 }
 
 #termInner {
 	position: relative;
 	margin: auto;
 	flex: 1 1 auto;
+	text-align: center;
 }
 
 #termBorder {
