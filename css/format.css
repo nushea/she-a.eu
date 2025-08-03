@@ -8,7 +8,13 @@
 	align-items: end;
 	justify-content: start;
 }
-
+#Centereds {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+        font-size: 1.3vw;
+}
 #Upper {
 	font-size: 1.3vw;
 	height: 0;
@@ -23,7 +29,9 @@
 	flex: 0 1 auto;
 	text-align: center;
 }
-
+#Bottom {
+	margin-bottom: 1.3vh;
+}
 #termContainer {
 	display: flex;
 	align-items: center;
