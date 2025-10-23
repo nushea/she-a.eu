@@ -28,6 +28,7 @@
 	margin: auto;
 	flex: 0 1 auto;
 	text-align: center;
+    top: 5vh;
 }
 #Bottom {
 	margin-bottom: 2vw;
@@ -45,10 +46,12 @@
 }
 
 #termBorder {
-	width: 826px;
+/*	width: 826px; */
+    width: 0;
 	/* height: 518px; */
 	position: relative;
 	top: -3.7px;
+    border: 0;
 }
 
 #ansible {
@@ -65,6 +68,7 @@
 	align-content: center;
 	padding-top: 36px;
 }
+
 
 .grid-cell {
 	margin: 0;
@@ -96,6 +100,7 @@
 
 body {
     flex-direction: row;
+    overflow: hidden;
 }
 
 
