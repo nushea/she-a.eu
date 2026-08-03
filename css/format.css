@@ -30,6 +30,12 @@ body {
 	padding-top: 1.5em;
 	margin: 1em;
 }
+#content {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+}
 #pageTitle {
 	padding: 0;
 	margin-top: 0;
@@ -44,13 +50,18 @@ body {
 	border-radius: 5px;
 }
 
+#tableWrapper {
+	border: 2px solid #bac2de;
+	width: max-content;
+  	margin: 0.5em;
+	border-radius: 1em;
+	overflow: hidden;
+}
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   max-width: 100%;
-  margin: 0.5em;
-  overflow: visible;
 }
 
 td, th {
@@ -61,6 +72,21 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #313244;
+}
+a:link {
+  color: #b4befe;
+}
+
+a:visited {
+  color: #cba6f7;
+}
+
+a:hover {
+  color: #89b4fa;
+}
+
+a:active {
+  color: #74c7ec;
 }
 
 #ansible {
