@@ -102,7 +102,6 @@ fetch('https://she-a.eu/nifur'+location.pathname)
 		let colbg = defbg;
 		let colfg = deffg;
 		await setupGrid();
-		document.getElementById("termBorder").src += "/img/terminal.svg";
 		while(i<tokens.length){
 			if(!tokens[i]){i++; continue;}
 			else if(tokens[i].includes("[0m")){
