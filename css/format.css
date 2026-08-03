@@ -23,7 +23,7 @@ body {
 	background: #1e1e2e;
 	padding: 2em;
 	border: 2px solid #cba6f7;
-	border-radius: 2em;
+	border-radius: 2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -44,8 +44,27 @@ body {
 	border-radius: 5px;
 }
 
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  max-width: 100%;
+  margin: 0.5em;
+  overflow: visible;
+}
+
+td, th {
+  border: 1px solid #bac2de;
+  text-align: left;
+  padding: 0.25em 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #313244;
+}
+
 #ansible {
-	display: grid;
+	display: none;
 	padding: 0;
 	border: 0;
 	justify-content: center;

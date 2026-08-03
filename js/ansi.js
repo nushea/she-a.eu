@@ -1,4 +1,5 @@
 ansible = document.getElementById("ansible");
+ansible.style.display = "grid";
 
 fontSize = 20;
 offX = 30;
