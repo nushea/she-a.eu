@@ -70,34 +70,34 @@ body {
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  max-width: 100%;
+	font-family: "FavFont", monospace;
+	border-collapse: collapse;
+	max-width: 100%;
 }
 
 td, th {
-  border: 1px solid #bac2de;
-  text-align: left;
-  padding: 0.25em 1em;
+	border: 1px solid #bac2de;
+	text-align: left;
+	padding: 0.25em 1em;
 }
 
 tr:nth-child(even) {
-  background-color: #313244;
+	background-color: #313244;
 }
 a:link {
-  color: #b4befe;
+	color: #b4befe;
 }
 
 a:visited {
-  color: #cba6f7;
+	color: #cba6f7;
 }
 
 a:hover {
-  color: #89b4fa;
+	color: #89b4fa;
 }
 
 a:active {
-  color: #74c7ec;
+	color: #74c7ec;
 }
 
 #ansible {
