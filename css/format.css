@@ -18,6 +18,15 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
+.websiteWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+}
+.otherWebsites {
+	display: flex;
+	gap: 0.25em;
+}
 #Items {
 	max-width: 60em;
 	background: #1e1e2e;
