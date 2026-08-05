@@ -68,6 +68,19 @@ body {
 	border-radius: 1em;
 	overflow: hidden;
 }
+#summary {
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: #74c7ec;
+}
+#summary:hover {
+	color: #89b4fa;
+	cursor: pointer;
+}
 
 table {
 	font-family: "FavFont", monospace;
